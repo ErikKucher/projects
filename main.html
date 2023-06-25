@@ -1,0 +1,181 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+</head>
+
+<body>
+    <ul class="nav nav-tabs bg-success-subtle" id="myTab" role="tablist">
+        <li class="nav-item" role="presentation">
+            <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#create-prod-pane"
+                type="button" role="tab" aria-controls="create-prod-pane" aria-selected="true">Створення товару</button>
+        </li>
+        <li class="nav-item" role="presentation">
+            <button class="nav-link" id="create-category" data-bs-toggle="tab" data-bs-target="#create-category-pane"
+                type="button" role="tab" aria-controls="create-category-pane" aria-selected="false">Створення категорії
+                товарів</button>
+        </li>
+        <li class="nav-item" role="presentation">
+            <button class="nav-link" id="create-order" data-bs-toggle="tab" data-bs-target="#create-order-pane"
+                type="button" role="tab" aria-controls="create-order-pane" aria-selected="false">Створення
+                замовлення</button>
+        </li>
+        <li class="nav-item" role="presentation">
+            <button class="nav-link" id="email-tab" data-bs-toggle="tab" data-bs-target="#email-pane" type="button"
+                role="tab" aria-controls="email-pane" aria-selected="false">Відправка Email повідомлення</button>
+        </li>
+        <li class="nav-item" role="presentation">
+            <button class="nav-link" id="sms-tab" data-bs-toggle="tab" data-bs-target="#sms-pane" type="button"
+                role="tab" aria-controls="sms-pane" aria-selected="false">Відправка SMS повідомлення</button>
+        </li>
+    </ul>
+    <div class="tab-content" id="myTabContent">
+        <div class="tab-pane fade show active" id="create-prod-pane" role="tabpanel" aria-labelledby="home-tab"
+            tabindex="0">
+            <div class="container">
+                <form action="" class="needs-validation" novalidate>
+                    <div class="mb-3">
+                        <label for="exampleFormControlInput1" class="form-label">Назва тоавару</label>
+                        <input type="text" class="form-control" id="exampleFormControlInput1" required>
+                        <div class="invalid-feedback">
+                            Заповніть це поле будь-ласка.
+                        </div>
+                    </div>
+                    <div class="mb-3">
+                        <label for="exampleFormControlInput1" class="form-label">Внутрішня назва товару</label>
+                        <input type="text" class="form-control" id="exampleFormControlInput1" required>
+                        <div class="invalid-feedback">
+                            Заповніть це поле будь-ласка.
+                        </div>
+                    </div>
+                    <div class="mb-3">
+                        <label for="exampleFormControlInput1" class="form-label">Ціна товару</label>
+                        <input type="text" class="form-control" id="exampleFormControlInput1" required>
+                        <div class="invalid-feedback">
+                            Заповніть це поле будь-ласка.
+                        </div>
+                    </div>
+                    <div class="mb-3">
+                        <label for="exampleFormControlInput1" class="form-label">Тип товару</label>
+                        <input type="text" class="form-control" id="exampleFormControlInput1" required>
+                        <div class="invalid-feedback">
+                            Заповніть це поле будь-ласка.
+                        </div>
+                    </div>
+                    <div class="mb-3">
+                        <label for="exampleFormControlTextarea1" class="form-label">Опис товару</label>
+                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" minlength="3" required style="resize: none;"></textarea>
+                        <div class="invalid-feedback">
+                            Поле не може бути пустим.
+                        </div>
+                    </div>
+                    <button type="submit" class="btn btn-primary mb-3">Відправити</button>
+                </form>
+            </div>
+        </div>
+        <div class="tab-pane fade" id="create-category-pane" role="tabpanel" aria-labelledby="create-category"
+            tabindex="0">
+            <div class="container">
+                <form action="" class="needs-validation" novalidate>
+                    
+                </form>
+            </div>
+        </div>
+        <div class="tab-pane fade" id="create-order-pane" role="tabpanel" aria-labelledby="create-order" tabindex="0">
+            <div class="container">
+                <form action="" class="needs-validation" novalidate>
+            </div>
+
+        </div>
+        <div class="tab-pane fade" id="email-pane" role="tabpanel" aria-labelledby="email-tab" tabindex="0">
+            <div class="container">
+                <form action="#" class="needs-validation" novalidate>
+                    <div class="mb-3">
+                        <label for="exampleFormControlInput1" class="form-label">Email отримувача</label>
+                        <input type="email" class="form-control" id="exampleFormControlInput1"
+                            placeholder="name@example.com" required>
+                        <div class="invalid-feedback">
+                            Заповніть це поле будь-ласка.
+                        </div>
+                    </div>
+                    <div class="mb-3">
+                        <label for="exampleFormControlTextarea1" class="form-label">Ваше повідомлення</label>
+                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" minlength="3" required style="resize: none;"></textarea>
+                        <div class="invalid-feedback">
+                            Поле не може бути пустим.
+                        </div>
+                    </div>
+                    <button type="submit" class="btn btn-primary mb-3">Відправити</button>
+                </form>
+            </div>
+        </div>
+        <div class="tab-pane fade" id="sms-pane" role="tabpanel" aria-labelledby="sms-tab" tabindex="0">
+            <div class="container">
+                <form action="" class="needs-validation" novalidate>
+                    <form action="#" class="needs-validation" novalidate>
+                        <div class="mb-3">
+                            <label for="exampleFormControlInput1" class="form-label">Номер телефону отримувача</label>
+                            <input type="text" class="form-control phone-number" id="exampleFormControlInput1" required>
+                            <div class="invalid-feedback">
+                                Заповніть це поле будь-ласка.
+                            </div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleFormControlTextarea1" class="form-label">Ваше повідомлення</label>
+                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" minlength="3" required style="resize: none;"></textarea>
+                            <div class="invalid-feedback">
+                                Поле не може бути пустим.
+                            </div>
+                        </div>
+                        <button type="submit" class="btn btn-primary mb-3">Відправити</button>
+                    </form>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"
+        integrity="sha384-fbbOQedDUMZZ5KreZpsbe1LCZPVmfTnH7ois6mU1QK+m14rQ1l2bGBq41eYeM/fS"
+        crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/imask"></script>
+    <script src="js/main.js"></script>
+    <script>
+        (() => {
+  'use strict'
+
+  // Fetch all the forms we want to apply custom Bootstrap validation styles to
+  const forms = document.querySelectorAll('.needs-validation')
+
+  // Loop over them and prevent submission
+  Array.from(forms).forEach(form => {
+    form.addEventListener('submit', event => {
+      if (!form.checkValidity()) {
+        event.preventDefault()
+        event.stopPropagation()
+      }
+
+      form.classList.add('was-validated')
+    }, false)
+  })
+})()
+    document.addEventListener('DOMContentLoaded', () => {
+
+        const inputElement = document.querySelector('.phone-number')
+        const maskOptions = {
+        mask: '+{380}(00)000-00-00'
+        }
+        IMask(inputElement, maskOptions)
+    })
+
+
+    </script>
+</body>
+
+</html>
